@@ -1,0 +1,174 @@
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8fdaf3;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+
+.nav li{
+    list-style: none;
+}
+.nav {
+    background-color: #0066ff4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    padding:20px;
+}
+
+.container {
+    margin:0 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container2{
+    margin:0 80px;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Card Styling */
+#card {
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+
+/* Hide elements initially */
+#card, #op, #numpad {
+    display: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:200px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input field for number */
+input[type="number"] {
+    width: 200px;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Radio button label styling */
+label {
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Numpad Section */
+#numpad {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+#numpad input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+#numpad label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Output Window */
+#op {
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    margin: 20px;
+    color: #333;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* Input Wrapper for Card Options */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Wrapper for the Card */
+.input-choice {
+    margin-right: 10px;
+}
+
+.input-wrapper input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    #card {
+        width: 90%;
+    }
+    #numpad {
+        width: 90%;
+    }
+}
